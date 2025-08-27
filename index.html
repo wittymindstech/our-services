@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>wittymindstech – Our Services</title>
+  <meta name="description" content="Mobile Apps, AI/ML Products, AR/VR, Cybersecurity, Full‑Stack Web, Cloud, Smart Home, Blockchain, GenAI, Deployment, DevOps & Monitoring." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d12;--panel:#0f131a;--soft:#151b23;--line:#202939;--text:#e8edf3;--muted:#a7b2bf;--brand:#22c55e;--accent:#3b82f6;--warn:#f59e0b;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue','Noto Sans',sans-serif;background:linear-gradient(180deg,#0b0d12,#0a0e14 30%,#0b0d12);color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1120px;margin-inline:auto;padding:0 20px}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.7);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .mark{width:36px;height:36px;border-radius:12px;background:conic-gradient(from 180deg,var(--accent),var(--brand));box-shadow:0 10px 24px rgba(34,197,94,.25)}
+    .brand h1{font-size:18px;margin:0}
+    .nav a.link{padding:10px 12px;border-radius:10px;color:var(--muted)}
+    .nav a.link:hover{background:rgba(255,255,255,.04);color:#fff}
+    .cta{padding:10px 14px;border-radius:12px;background:linear-gradient(180deg,var(--brand),#16a34a);font-weight:800;color:#04130a}
+
+    .hero{padding:36px 0}
+    .card{background:radial-gradient(800px 320px at -10% -40%,rgba(59,130,246,.15),transparent 40%),radial-gradient(800px 320px at 120% 20%,rgba(34,197,94,.12),transparent 40%),var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px}
+    .hero h2{margin:0 0 8px;font-size:32px}
+    .hero p{margin:0;color:var(--muted)}
+
+    h3.sec{font-size:22px;margin:20px 0 12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .svc{border:1px solid var(--line);background:linear-gradient(180deg,#0e131b,#0d1218);border-radius:16px;display:flex;flex-direction:column;overflow:hidden}
+    .svc img{width:100%;height:180px;object-fit:cover}
+    .svc .body{padding:16px;display:flex;flex-direction:column;gap:10px}
+    .svc h4{margin:0}
+    .meta{color:var(--muted);font-size:13px}
+    .actions{display:flex;gap:8px;flex-wrap:wrap}
+    .btn{border:1px solid #243249;background:#0d1420;color:#fff;border-radius:10px;padding:10px 12px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.brand{background:linear-gradient(180deg,var(--brand),#16a34a);border:0;color:#04130a}
+    .btn.accent{background:linear-gradient(180deg,var(--accent),#2563eb);border:0}
+
+    /* Contact & Query form (same as previous) */
+    .contact{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0}
+    .contact .row{display:flex;gap:10px;flex-wrap:wrap}
+    .contact input, .contact textarea{padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--soft);color:#fff}
+
+    footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;margin-top:28px}
+    .foot{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;padding:20px 0}
+    .yt{display:flex;gap:10px;flex-wrap:wrap}
+    .yt a{padding:6px 10px;border:1px solid #294057;border-radius:8px;background:#0d1420;color:#cfe4ff}
+
+    .wh-float{position:fixed;right:18px;bottom:18px;z-index:120}
+    .wh-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(180deg,#22c55e,#16a34a);color:#04130a;padding:12px 16px;border-radius:999px;font-weight:900;box-shadow:0 10px 20px rgba(0,0,0,.25)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <h1>wittymindstech</h1>
+          <div style="font-size:12px;color:var(--muted)">Automation is the Present & Future</div>
+        </div>
+      </div>
+      <nav>
+        <a class="link" href="#services">Services</a>
+        <a class="link" href="#contact">Contact</a>
+        <a class="cta" id="whTop" href="#">WhatsApp Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <h2>Our Services</h2>
+        <p>Engineering, security, cloud and automation — delivered end‑to‑end with speed and reliability.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h3 class="sec">What We Do</h3>
+      <div class="grid" id="svcGrid"><!-- JS renders services here --></div>
+    </section>
+
+    <!-- Contact & Query form (same as previous) -->
+    <section id="contact">
+      <h3 class="sec">Quick Contact</h3>
+      <div class="card contact">
+        <div class="row">
+          <input id="buyerName" placeholder="Your name" />
+          <input id="buyerPhone" placeholder="Your phone" />
+        </div>
+        <div class="row">
+          <a class="btn brand" id="whContact" href="#">Chat on WhatsApp</a>
+          <a class="btn" href="tel:+918971599350">Call: +91 8971599350</a>
+        </div>
+      </div>
+
+      <h3 class="sec">Send Us Your Query</h3>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="card contact" id="queryForm">
+        <div class="row">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="row">
+          <input type="tel" name="number" placeholder="Your Phone Number" required />
+        </div>
+        <div class="row">
+          <textarea name="query" rows="3" placeholder="Your Query" required></textarea>
+        </div>
+        <div class="row">
+          <button class="btn brand" type="submit">Submit Query</button>
+          <div style="color:var(--muted)">We’ll reply from <strong>wittytechminds@gmail.com</strong>.</div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="year"></span> wittymindstech • All rights reserved</div>
+      <div class="yt">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">YouTube Video 1</a>
+        <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">YouTube Video 2</a>
+        <a href="https://www.youtube.com/@your-channel" target="_blank">Our Channel</a>
+      </div>
+      <div>
+        Contact: <a href="tel:+918971599350">+91 8971599350</a> · <a id="whFooter" href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="wh-float">
+    <a id="whFloat" class="wh-btn" href="#">💬 Chat on WhatsApp</a>
+  </div>
+
+  <script>
+    const WHATSAPP_NUM = '918971599350';
+
+    const services = [
+      { id:'mobile-apps',
+        title:'Mobile Apps (Android & iOS)',
+        desc:'Native & cross‑platform apps, analytics, CI/CD, store publishing.',
+        href:'services/mobile-apps.html',
+        img:'assets/images/mobile-apps.jpg'
+      },
+      { id:'ai-ml-products',
+        title:'AI ML Products (Website, Apps & Cybersecurity Products)',
+        desc:'ML models, RAG/embeddings, secure AI features across platforms.',
+        href:'services/ai-ml-products.html',
+        img:'assets/images/ai-ml-products.jpg'
+      },
+      { id:'ar-vr',
+        title:'AR VR (AR/VR for All)',
+        desc:'Immersive experiences, WebAR, AR try‑ons, VR walkthroughs.',
+        href:'services/ar-vr.html',
+        img:'assets/images/ar-vr.jpg'
+      },
+      { id:'cybersecurity',
+        title:'Cybersecurity Services (Cloud, Cluster, Web Security)',
+        desc:'Threat modeling, SOC, SIEM/EDR, hardening, secure SDLC.',
+        href:'services/cybersecurity.html',
+        img:'assets/images/cybersecurity.jpg'
+      },
+      { id:'fullstack-web',
+        title:'Full‑Stack Website Development',
+        desc:'Next.js/React, Python/Node, APIs, performance, SEO.',
+        href:'services/fullstack-web.html',
+        img:'assets/images/fullstack-web.jpg'
+      },
+      { id:'cloud',
+        title:'Cloud Computing (AWS, Azure)',
+        desc:'Architecture, migrations, cost control, security best practices.',
+        href:'services/cloud.html',
+        img:'assets/images/cloud.jpg'
+      },
+      { id:'smart-home',
+        title:'Smart Home Products (Sensors, Camera, Alexa)',
+        desc:'IoT devices, edge AI, secure connectivity, mobile dashboards.',
+        href:'services/smart-home.html',
+        img:'assets/images/smart-home.jpg'
+      },
+      { id:'blockchain',
+        title:'Blockchain Services',
+        desc:'Smart contracts, wallets, identity, integrations with apps.',
+        href:'services/blockchain.html',
+        img:'assets/images/blockchain.jpg'
+      },
+      { id:'genai',
+        title:'GenAI Products (Automation)',
+        desc:'Agentic workflows, tool‑use, automations for ops & support.',
+        href:'services/genai.html',
+        img:'assets/images/genai.jpg'
+      },
+      { id:'devops',
+        title:'Deployment, DevOps & Monitoring',
+        desc:'CI/CD, IaC, SRE, observability, on‑call automation.',
+        href:'services/devops.html',
+        img:'assets/images/devops.jpg'
+      },
+    ];
+
+    const grid = document.getElementById('svcGrid');
+
+    function waUrl(text){
+      return `https://wa.me/${WHATSAPP_NUM}?text=${encodeURIComponent(text)}`;
+    }
+
+    function render(){
+      grid.innerHTML = services.map(s => `
+        <article class=\"svc\">
+          <a href=\"${s.href}\"><img src=\"${s.img}\" alt=\"${s.title}\" /></a>
+          <div class=\"body\">
+            <h4>${s.title}</h4>
+            <div class=\"meta\">${s.desc}</div>
+            <div class=\"actions\">
+              <a class=\"btn brand\" href=\"${s.href}\">View Service</a>
+              <a class=\"btn accent\" href=\"${waUrl('Hi, I want details about ' + s.title)}\" target=\"_blank\">Enquire</a>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function wireWhatsAppLinks(){
+      const text = 'Hi, I want details about your services at wittymindstech.';
+      document.getElementById('whTop').href = waUrl(text);
+      document.getElementById('whContact').href = waUrl(text);
+      document.getElementById('whFooter').href = waUrl(text);
+      document.getElementById('whFloat').href = waUrl('Hi! I want to chat about services.');
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    render();
+    wireWhatsAppLinks();
+  </script>
+</body>
+</html>
